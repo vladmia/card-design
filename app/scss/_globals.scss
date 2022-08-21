@@ -1,0 +1,70 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.3;
+  font: {
+    size: 1rem;
+    weight: bold;
+  }
+  color: $veryDarkViolet;
+}
+
+// Flexbox styling
+
+.flex {
+  &-jc-aic,
+  &-se-aic,
+  &-sa-aic,
+  &-sb-aic {
+    display: flex;
+    align-items: center;
+  }
+
+  &-jc-aic {
+    justify-content: center;
+  }
+  &-se-aic {
+    justify-content: space-evenly;
+  }
+  &-sa-aic {
+    justify-content: space-around;
+  }
+  &-sb-aic {
+    justify-content: space-between;
+  }
+
+  // Flex direction - column
+  &-col-jcaic,
+  &-col-seaic,
+  &-col-saaic,
+  &-col-sbaic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-col-jcaic {
+    justify-content: center;
+  }
+  &-col-seaic {
+    justify-content: space-evenly;
+  }
+  &-col-saaic {
+    justify-content: space-around;
+  }
+  &-col-sbaic {
+    justify-content: space-between;
+  }
+}
